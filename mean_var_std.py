@@ -3,7 +3,7 @@ import numpy as np
 def calculate(list):
      # Verifica se a lista tem exatamente 9 elementos
     if len(list) != 9:
-        raise ValueError("A lista deve conter 9 elementos para se encaixar no padrão 3x3.")
+        raise ValueError("List must contain nine numbers.")
     matriz = np.array(list).reshape(3, 3) #separa a lista em 3 partes iguais
     calculations = {
     'mean': [matriz.mean(axis=0).tolist(), matriz.mean(axis=1).tolist(), matriz.mean().tolist()],
